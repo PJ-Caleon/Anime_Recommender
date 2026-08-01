@@ -38,6 +38,18 @@ const similarQuery = `
 }
 `;
 
+const genreQuery = `
+  query ($genre: String) {
+    Page(page: 1, perPage: 10){
+      media(genre: $genre, type: ANIME, sort: SCORE_DESC) {
+        title {english romaji}
+        averageScore
+        genres
+      }
+    }
+  }
+`;
+
 export async function get_anime(name) {
   const option = {
     method: "POST",
@@ -144,9 +156,49 @@ export async function similar_anime(anime) {
   }
 }
 
+export async function genre(genre_name) {
+  const option = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      ...(TOKEN && { Authorization: `Bearer ${TOKEN}` }),
+    },
+    body: JSON.stringify({
+      query: genreQuery,
+      variables: { genre: genre },
+    }),
+  };
+
+  try {
+    const response = await fetch(ANILIST_URL, option);
+    const result = await response.json();
+
+    rateRemain = response.headers.get("x-ratelimit-remaining");
+
+    if (!response.ok) {
+      console.error("API Error:", result);
+      console.error(`${genre_name} is not a valid genre`);
+      return [];
+    }
+
+    const genreList = result.data?.Page?.media || [];
+
+    console.log(`Top 10 ${genre_name}: `);
+    genreList.forEach((anime, index) => {
+      console.log(`${index + 1}. ${anime.title.english || anime.title.romaji}`);
+    });
+    return genreList;
+  } catch (error) {
+    console.error("Fetch failed:", error);
+    return [];
+  }
+}
+
 export function getRateLimit() {
   console.log(`[Quota: ${rateRemain} request left/ min]`);
 }
 
 // console.log(get_anime("Chainsmoker Cat"));
 // await similar_anime("Chainsmoker Cat");
+await genre("Action");
