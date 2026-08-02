@@ -1,19 +1,22 @@
-import {
-  get_anime,
-  similar_anime,
-  genre,
-  getRateLimit,
-} from "./anime_api_fetch.js";
+import { FileCache } from "./cache.js";
+import { AniListService } from "./anime_api_fetch.js";
 
-import { clearCache } from "./cache.js";
+async function main() {
+  const cache = new FileCache();
+  const aniList = new AniListService(cache);
 
-// This is the test script for website to come
-clearCache();
-await get_anime("Bocchi the rock!");
-await get_anime("Bocchi the rock!");
-await similar_anime("saga of Tanya the evil");
-await similar_anime("saga of Tanya the evil");
-await genre("Slice of life");
-await genre("Slice of life");
-//await get_anime("nino nakano season 69");
-getRateLimit(); // even failed request will be counted
+  cache.clear();
+
+  await aniList.getAnime("Bocchi the rock!");
+  await aniList.getAnime("Bocchi the rock!");
+
+  await aniList.getSimilar("rezero");
+  await aniList.getSimilar("rezero");
+
+  await aniList.getGenre("Harem");
+  await aniList.getGenre("Harem");
+
+  aniList.rateLimit();
+}
+
+main();

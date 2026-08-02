@@ -14,56 +14,68 @@
     },
     "expiresAt": null
   },
-  "similar:saga of tanya the evil": {
+  "similar:rezero": {
     "value": [
       {
-        "title": "Overlord",
-        "score": "77%",
+        "title": "Steins;Gate",
+        "score": "89%",
         "genres": [
-          "Action",
-          "Adventure",
-          "Fantasy"
-        ]
-      },
-      {
-        "title": "86 EIGHTY-SIX",
-        "score": "83%",
-        "genres": [
-          "Action",
           "Drama",
-          "Mecha",
-          "Sci-Fi"
-        ]
-      },
-      {
-        "title": "Re:ZERO -Starting Life in Another World-",
-        "score": "81%",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Drama",
-          "Fantasy",
           "Psychological",
-          "Romance",
+          "Sci-Fi",
           "Thriller"
         ]
       },
       {
-        "title": "Overlord III",
-        "score": "77%",
+        "title": "Summer Time Rendering",
+        "score": "83%",
         "genres": [
           "Action",
+          "Drama",
+          "Mystery",
+          "Supernatural",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "ERASED",
+        "score": "81%",
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Psychological",
+          "Supernatural",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Mushoku Tensei: Jobless Reincarnation Cour 2",
+        "score": "85%",
+        "genres": [
           "Adventure",
+          "Drama",
+          "Ecchi",
           "Fantasy"
         ]
       },
       {
-        "title": "Gate",
-        "score": "74%",
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "score": "82%",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Ecchi",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Tokyo Revengers",
+        "score": "77%",
         "genres": [
           "Action",
-          "Adventure",
-          "Fantasy"
+          "Drama",
+          "Romance",
+          "Supernatural"
         ]
       },
       {
@@ -76,145 +88,30 @@
         ]
       },
       {
-        "title": "Alderamin on the Sky",
-        "score": "73%",
+        "title": "Saga of Tanya the Evil",
+        "score": "78%",
         "genres": [
           "Action",
-          "Adventure",
-          "Drama",
           "Fantasy"
         ]
       },
       {
-        "title": "86 EIGHTY-SIX Part 2",
-        "score": "87%",
-        "genres": [
-          "Action",
-          "Drama",
-          "Mecha",
-          "Sci-Fi"
-        ]
-      },
-      {
-        "title": "Hellsing Ultimate",
+        "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
         "score": "81%",
         "genres": [
-          "Action",
-          "Horror",
-          "Supernatural"
-        ]
-      },
-      {
-        "title": "Izetta: The Last Witch",
-        "score": "69%",
-        "genres": [
-          "Action",
-          "Drama"
-        ]
-      }
-    ],
-    "expiresAt": null
-  },
-  "genre:slice of life": {
-    "value": [
-      {
-        "title": "Fruits Basket The Final Season",
-        "score": "(89%)",
-        "genres": [
-          "Comedy",
+          "Adventure",
           "Drama",
-          "Psychological",
-          "Romance",
-          "Slice of Life",
-          "Supernatural"
+          "Ecchi",
+          "Fantasy"
         ]
       },
       {
-        "title": "March comes in like a lion Season 2",
-        "score": "(89%)",
-        "genres": [
-          "Drama",
-          "Slice of Life"
-        ]
-      },
-      {
-        "title": "Kaguya-sama: Love is War -Ultra Romantic-",
-        "score": "(89%)",
-        "genres": [
-          "Comedy",
-          "Psychological",
-          "Romance",
-          "Slice of Life"
-        ]
-      },
-      {
-        "title": "Tomorrow's Joe 2",
-        "score": "(88%)",
+        "title": "The Rising of the Shield Hero",
+        "score": "76%",
         "genres": [
           "Action",
-          "Drama",
-          "Slice of Life",
-          "Sports"
-        ]
-      },
-      {
-        "title": "A Silent Voice",
-        "score": "(88%)",
-        "genres": [
-          "Drama",
-          "Romance",
-          "Slice of Life"
-        ]
-      },
-      {
-        "title": "Clannad: After Story",
-        "score": "(88%)",
-        "genres": [
-          "Drama",
-          "Romance",
-          "Slice of Life",
-          "Supernatural"
-        ]
-      },
-      {
-        "title": "Mob Psycho 100 II",
-        "score": "(87%)",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Drama",
-          "Psychological",
-          "Slice of Life",
-          "Supernatural"
-        ]
-      },
-      {
-        "title": "Sound! Euphonium 3",
-        "score": "(87%)",
-        "genres": [
-          "Drama",
-          "Music",
-          "Slice of Life"
-        ]
-      },
-      {
-        "title": "Journal with Witch",
-        "score": "(87%)",
-        "genres": [
-          "Drama",
-          "Slice of Life"
-        ]
-      },
-      {
-        "title": "Mob Psycho 100 III",
-        "score": "(87%)",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Drama",
-          "Psychological",
-          "Slice of Life",
-          "Supernatural"
+          "Adventure",
+          "Fantasy"
         ]
       }
     ],
