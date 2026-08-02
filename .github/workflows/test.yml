@@ -1,0 +1,45 @@
+name: Node.js CI & Integration Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+# Cancel older in-progress builds if you push new commits rapidly
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Install pnpm on the GitHub runner
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      # Set up Node.js with pnpm caching enabled
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      # Install dependencies cleanly
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Run your Vitest suite
+      - name: Run unit & integration tests
+        run: pnpm test

@@ -2,5 +2,11 @@
   "dependencies": {
     "dotenv": "^17.4.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
 }
