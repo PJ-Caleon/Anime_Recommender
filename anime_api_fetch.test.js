@@ -109,20 +109,20 @@ describe("AniListService", () => {
       expect(anime).not.toBeNull();
       expect(anime.title).toContain("Chainsmoker Cat");
       expect(Array.isArray(anime.genres)).toBe(true);
-    }, 10000); // 10 second timeout for network requests
+    }, 60000); // 60 second timeout for network requests
     // Test getSimilar function
     it("getSimilarAnime: should fetch real recommendations from AniList", async () => {
       const similar = await service.getSimilar("Konosuba");
 
       expect(Array.isArray(similar)).toBe(true);
       expect(similar.length).toBeGreaterThan(0);
-    }, 10000);
+    }, 60000);
     // Test getGenre function
     it("getByGenre: should fetch top anime for a genre from AniList", async () => {
       const genreList = await service.getGenre("Action");
 
       expect(Array.isArray(genreList)).toBe(true);
       expect(genreList.length).toBeGreaterThan(0);
-    }, 10000);
+    }, 60000);
   });
 });
