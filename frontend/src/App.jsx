@@ -3,6 +3,9 @@ import InputBox from "./components/InputBox";
 import RadioBox from "./components/RadioBox";
 import "./index.css";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "https://ani-search-0eod.onrender.com";
+
 export default function App() {
   // "getAnime" | "getSimilar" | "getGenre"
   const [currentFunction, setCurrentFunction] = useState("getAnime");
@@ -35,7 +38,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000${endpoint}?name=${encodeURIComponent(searchTerm)}`,
+        `${API_BASE_URL}${endpoint}?name=${encodeURIComponent(searchTerm)}`,
       );
 
       if (!response.ok) {
