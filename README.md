@@ -44,7 +44,7 @@ AniList currently imposes a rate limit of 30 requests per minute. This project i
 
 ## Deployment
 
-This project is deployed on **Render**
+This project is deployed on **Netlify**(frontend) and **Render**(backend)
 
 ## Acknowledgments
 
