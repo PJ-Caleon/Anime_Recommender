@@ -48,4 +48,8 @@ app.get("/api/genre", async (req, res) => {
     rateRemain: anilist.rateRemain ?? "30",
   });
 });
+
+app.get("/", (req, res) => {
+  res.send("Ani.Search API is running");
+});
 app.listen(PORT, () => {});
