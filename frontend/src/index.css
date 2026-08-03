@@ -182,3 +182,113 @@ code {
   border: none;
   padding: 0;
 }
+
+/* Display Anime */
+
+.results-container {
+  margin-top: 2rem;
+}
+.error-message {
+  color: var(--love);
+}
+/* getAnime function */
+.anime-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  max-width: 550px;
+  margin: 0 auto;
+}
+.anime-card h2 {
+  color: var(--rose);
+  margin-top: 0;
+}
+.anime-card p {
+  margin-bottom: 0.4rem;
+}
+.anime-card .description {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Anime list for similar and genre */
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.grid-card:hover {
+  border-color: var(--iris);
+  transform: translateY(-2px);
+}
+
+.grid-card h3 {
+  color: var(--rose);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* Radiobox */
+.radio-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.radio-label:hover {
+  border-color: var(--iris);
+  background-color: var(--overlay);
+}
+
+.radio-label.active {
+  border-color: var(--iris);
+  background-color: var(--accent-bg);
+}
+
+.radio-input {
+  accent-color: var(--iris);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.radio-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.radio-label.active .radio-text {
+  color: var(--rose);
+}

@@ -12,14 +12,14 @@ const QUERIES = {
     query ($search: String) {
       Media (search: $search, type: ANIME) {
         title { english romaji }
-        recommendations(perPage: 10, sort: RATING_DESC){
+        recommendations(perPage: 12, sort: RATING_DESC){
           nodes { mediaRecommendation { title { english } averageScore genres } }
         }
       }
     }`,
   genre: `
     query ($genre: String) {
-      Page(page: 1, perPage: 10){
+      Page(page: 1, perPage: 12){
         media(genre: $genre, type: ANIME, sort: SCORE_DESC) {
           title { english romaji }
           averageScore genres
@@ -95,17 +95,6 @@ export class AniListService {
         return null;
       }
     }
-
-    // Console output for testing
-    if (anime) {
-      console.log("Anime Data:");
-      console.log(`Title           : ${anime.title}`);
-      console.log(`Genre           : ${anime.genres.join(", ")}`);
-      console.log(`Average Score   : ${anime.averageScore}`);
-      console.log(`Status          : ${anime.status}`);
-      console.log(`Episodes        : ${anime.episodes}`);
-      console.log(`Description     : ${anime.description}\n`);
-    }
     return anime;
   }
 
@@ -140,16 +129,6 @@ export class AniListService {
         return [];
       }
     }
-
-    // Console output for testing
-    console.log(`Similar anime to "${animeName}":`);
-    recommendations.forEach((item, index) => {
-      console.log(
-        `${index + 1}. ${item.title} (${item.score}) - Genres: ${item.genres.join(", ")}`,
-      );
-    });
-    console.log("\n");
-
     return recommendations;
   }
 
@@ -179,14 +158,6 @@ export class AniListService {
         return [];
       }
     }
-
-    // Console output for testing
-    console.log(`Top 10 ${genreName} anime:`);
-    genreList.forEach((item, index) => {
-      console.log(`${index + 1}. ${item.title} ${item.score}`);
-    });
-    console.log("\n");
-
     return genreList;
   }
 

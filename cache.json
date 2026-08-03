@@ -1,18 +1,443 @@
 {
-  "anime:chainsaw man": {
+  "anime:gym": {
     "value": {
-      "title": "Chainsaw Man",
+      "title": "How Heavy Are the Dumbbells You Lift?: Silverman Gym Intense Training Course",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life",
+        "Sports"
+      ],
+      "averageScore": "62%",
+      "status": "FINISHED",
+      "episodes": 2,
+      "description": "Specials included on the Dumbbell Nan Kilo Moteru? DVD/BD volumes 3 and 4, respectively. Also included on Funimation's US Blu-Ray release. They are completely new extensive versions of exercise sessions normally seen at the end of each TV anime episode."
+    },
+    "expiresAt": null
+  },
+  "similar:gym": {
+    "value": [
+      {
+        "title": "Iwakakeru -Sport Climbing Girls-",
+        "score": "62%",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Sports"
+        ]
+      },
+      {
+        "title": "Anime De Training! EX",
+        "score": "50%",
+        "genres": [
+          "Comedy",
+          "Slice of Life",
+          "Sports"
+        ]
+      }
+    ],
+    "expiresAt": null
+  },
+  "similar:attack on titan": {
+    "value": [
+      {
+        "title": "Vinland Saga",
+        "score": "87%",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ]
+      },
+      {
+        "title": "The Promised Neverland",
+        "score": "83%",
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror",
+          "Mystery",
+          "Psychological",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Kabaneri of the Iron Fortress",
+        "score": "70%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Horror",
+          "Supernatural"
+        ]
+      },
+      {
+        "title": "86 EIGHTY-SIX",
+        "score": "83%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Mecha",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "Seraph of the End: Vampire Reign",
+        "score": "73%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Mystery",
+          "Supernatural"
+        ]
+      },
+      {
+        "title": "86 EIGHTY-SIX Part 2",
+        "score": "87%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Mecha",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "Kaiju No. 8",
+        "score": "81%",
+        "genres": [
+          "Action",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "Fullmetal Alchemist: Brotherhood",
+        "score": "90%",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "DECA-DENCE",
+        "score": "71%",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "Parasyte -the maxim-",
+        "score": "81%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Horror",
+          "Psychological",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "Chainsaw Man",
+        "score": "83%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Horror",
+          "Supernatural"
+        ]
+      },
+      {
+        "title": "Seraph of the End: Battle in Nagoya",
+        "score": "75%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Supernatural"
+        ]
+      }
+    ],
+    "expiresAt": null
+  },
+  "genre:fantasy": {
+    "value": [
+      {
+        "title": "Frieren: Beyond Journey’s End",
+        "score": "(91%)",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Fullmetal Alchemist: Brotherhood",
+        "score": "(90%)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Re:ZERO -Starting Life in Another World- Season 4",
+        "score": "(90%)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Fantasy",
+          "Psychological",
+          "Romance",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Attack on Titan Season 3 Part 2",
+        "score": "(90%)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Mystery"
+        ]
+      },
+      {
+        "title": "ONE PIECE FAN LETTER",
+        "score": "(90%)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Hunter x Hunter (2011)",
+        "score": "(89%)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Frieren: Beyond Journey’s End Season 2",
+        "score": "(88%)",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "ONE PIECE",
+        "score": "(87%)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Drama",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2",
+        "score": "(87%)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Psychological",
+          "Romance"
+        ]
+      },
+      {
+        "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
+        "score": "(87%)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Mystery",
+          "Psychological"
+        ]
+      },
+      {
+        "title": "Violet Evergarden: the Movie",
+        "score": "(87%)",
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Slice of Life"
+        ]
+      },
+      {
+        "title": "Attack on Titan Final Season",
+        "score": "(87%)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy",
+          "Mystery"
+        ]
+      }
+    ],
+    "expiresAt": null
+  },
+  "anime:re:zero -starting life in another world- season 4": {
+    "value": {
+      "title": "Re:ZERO -Starting Life in Another World- Season 4",
       "genres": [
         "Action",
+        "Adventure",
         "Drama",
-        "Horror",
-        "Supernatural"
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
       ],
-      "averageScore": "83%",
-      "status": "FINISHED",
-      "episodes": 12,
-      "description": "Denji is a teenage boy living with a Chainsaw Devil named Pochita. Due to the debt his father left behind, he has been living a rock-bottom life while repaying his debt by harvesting devil corpses with Pochita.\nOne day, Denji is betrayed and killed. As his consciousness fades, he makes a contract with Pochita and gets revived as \"Chainsaw Man\" — a man with a devil's heart."
+      "averageScore": "90%",
+      "status": "RELEASING",
+      "episodes": 19,
+      "description": "The fourth season of Re:Zero kara Hajimeru Isekai Seikatsu.\n\nTo save his stricken allies, Subaru faces a deadly desert to find the Sage at Pleiades Watchtower.\n\n\nNote: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026."
     },
+    "expiresAt": null
+  },
+  "similar:re:zero -starting life in another world- season 4": {
+    "value": [
+      {
+        "title": "Steins;Gate",
+        "score": "89%",
+        "genres": [
+          "Drama",
+          "Psychological",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Summer Time Rendering",
+        "score": "83%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Mystery",
+          "Supernatural",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Steins;Gate 0",
+        "score": "84%",
+        "genres": [
+          "Drama",
+          "Psychological",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
+        "score": "81%",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Ecchi",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "score": "85%",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Ecchi",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "ERASED",
+        "score": "81%",
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Psychological",
+          "Supernatural",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Steins;Gate The Movie – Load Region of Déjà Vu",
+        "score": "82%",
+        "genres": [
+          "Drama",
+          "Romance",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Re:ZERO -Starting Life in Another World- Season 2",
+        "score": "83%",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Fantasy",
+          "Psychological",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "That Time I Got Reincarnated as a Slime",
+        "score": "80%",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Fantasy"
+        ]
+      },
+      {
+        "title": "GNOSIA",
+        "score": "77%",
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Neon Genesis Evangelion",
+        "score": "83%",
+        "genres": [
+          "Action",
+          "Drama",
+          "Mecha",
+          "Mystery",
+          "Psychological",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "KONOSUBA -God's blessing on this wonderful world!",
+        "score": "79%",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Ecchi",
+          "Fantasy"
+        ]
+      }
+    ],
     "expiresAt": null
   }
 }

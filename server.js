@@ -27,4 +27,25 @@ app.get("/api/anime", async (req, res) => {
   });
 });
 
+app.get("/api/similar", async (req, res) => {
+  const { name } = req.query;
+  if (!name) return res.status(400).json({ error: "name is required" });
+  const data = await anilist.getSimilar(name);
+  if (!data) return res.status(404).json({ error: "Anime not found" });
+  res.json({
+    data,
+    rateRemain: anilist.rateRemain ?? "30",
+  });
+});
+
+app.get("/api/genre", async (req, res) => {
+  const { name } = req.query;
+  if (!name) return res.status(400).json({ error: "name is required" });
+  const data = await anilist.getGenre(name);
+  if (!data) return res.status(404).json({ error: "Anime not found" });
+  res.json({
+    data,
+    rateRemain: anilist.rateRemain ?? "30",
+  });
+});
 app.listen(PORT, () => {});
