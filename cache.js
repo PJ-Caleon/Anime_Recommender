@@ -42,7 +42,7 @@ export class FileCache {
 
     if (item.expiresAt && Date.now() > item.expiresAt) {
       delete cacheStore[key];
-      this.clearCache(key);
+      this.clear(key);
       return null;
     }
     return item.value;

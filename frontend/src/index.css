@@ -1,0 +1,184 @@
+:root {
+  --base: #191724;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ebbcba;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-med: #403d52;
+
+  /* Mapped App Tokens */
+  --text-main: var(--text);
+  --text-h: var(--rose);
+  --bg: var(--base);
+  --border: var(--overlay);
+  --code-bg: var(--surface);
+  --accent: var(--iris);
+  --accent-bg: rgba(196, 167, 231, 0.1);
+  --accent-border: rgba(196, 167, 231, 0.4);
+  --shadow:
+    rgba(0, 0, 0, 0.3) 0 10px 15px -3px, rgba(0, 0, 0, 0.2) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text-main);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+  color: var(--subtle);
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--foam);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+/* Input Box Component */
+.input-box-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-box-field {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  outline: none;
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input-box-field:focus {
+  border-color: var(--iris);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.input-box-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--accent-border);
+  background-color: var(--overlay);
+  color: var(--rose);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    border-color 0.2s ease;
+}
+
+.input-box-button:hover {
+  background-color: var(--highlight-med);
+  border-color: var(--iris);
+}
+
+.input-box-button:active {
+  transform: scale(0.98);
+}
+
+/* Quota */
+.quota-bdage {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  z-index: 100;
+}
+.quota-badge code {
+  color: var(--gold);
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
